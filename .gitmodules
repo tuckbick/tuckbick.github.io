@@ -1,0 +1,3 @@
+[submodule "tumblr"]
+	path = tumblr
+	url = https://github.com/tuckbick/tumblr.git
