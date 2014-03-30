@@ -46,14 +46,17 @@
         html {
             font-size: 22px;
         }
+        body {
+            display: table;
+            width: 100%;
+            height: 100%;
+        }
         .wrapper {
-            width: 800px;
-            height: 300px;
-            position: absolute;
-            left: 50%;
-            top: 50%;
-            margin-left: -400px;
-            margin-top: -150px;
+            display: table-cell;
+            text-align: center;
+            vertical-align: middle;
+            position: relative;
+            top: -5%;
         }
             .title {
                 line-height: 1;
@@ -77,6 +80,11 @@
             text-align: center;
             background-color: #213B4C;
             height: 100%;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            cursor: default;
         }
         .wrapper {
                 -webkit-animation: fadein 1s;
@@ -93,6 +101,13 @@
                 font-weight: 300;
                 color: #879E96;
             }
+                .about a {
+                    color: inherit;
+                }
+                .about a:hover {
+                    color: #213B4C;
+                    background-color: #879E96;
+                }
                 i {
                     padding: 0.5rem;
                 }
@@ -107,43 +122,33 @@
                 .connect-item:last-child {
                     margin-right: 0;
                 }
-                    a {
+                    .connect-item a {
                         color: #FECEBA;
                     }
-                    a:hover {
+                    .connect-item a:hover {
                         color: #213B4C;
                         background-color: #FECEBA;
                     }
         @keyframes fadein {
-            from {
-                opacity:0;
-            }
-            to {
-                opacity:1;
-            }
+            from { opacity:0 }
+            to   { opacity:1 }
         }
-        @-moz-keyframes fadein { /* Firefox */
-            from {
-                opacity:0;
-            }
-            to {
-                opacity:1;
-            }
+        @-moz-keyframes fadein {
+            from { opacity:0 }
+            to   { opacity:1 }
         }
-        @-webkit-keyframes fadein { /* Safari and Chrome */
-            from {
-                opacity:0;
-            }
-            to {
-                opacity:1;
-            }
+        @-webkit-keyframes fadein {
+            from { opacity:0 }
+            to   { opacity:1 }
         }
-        @-o-keyframes fadein { /* Opera */
-            from {
-                opacity:0;
-            }
-            to {
-                opacity: 1;
+        @-o-keyframes fadein {
+            from { opacity:0 }
+            to   { opacity:1 }
+        }
+
+        @media (max-width: 600px) {
+            .wrapper {
+                width: ;
             }
         }
 
@@ -154,7 +159,7 @@
 
     <div class="wrapper">
         <header class="title">Tucker Bickler</header>
-        <p class="about">UI Engineer at HomeAway <i>&#5159;</i> Austin, TX</p>
+        <p class="about">UI Engineer at <a href="http://homeaway.com/" target="_blank">HomeAway</a> <i>&#5159;</i> Austin, TX</p>
         <nav>
             <ul class="connect">
                 <li class="connect-item"><a href="http://twitter.com/tuckbick" target="_blank">Twitter</a></li>
