@@ -12,7 +12,7 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600' rel='stylesheet' type='text/css'>
+    <!-- <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600' rel='stylesheet' type='text/css'> -->
     <style>
 
         /* RESET */
@@ -75,7 +75,8 @@
         /* STYLE */
         /* http://www.colourlovers.com/palette/2957995/Thank_you_%E2%99%A5_300 */
         html {
-            font-family: 'Open Sans', sans-serif;
+            /*font-family: 'Open Sans', sans-serif;*/
+            font-family: "Arial Black", Gadget, sans-serif;
             font-weight: 300;
             text-align: center;
             background-color: #213B4C;
@@ -85,6 +86,22 @@
             -ms-user-select: none;
             user-select: none;
             cursor: default;
+        }
+        .bat {
+            background-size: contain;
+            background-image: url(img/bat.svg);
+/*            height: 370px;
+            width: 452px;*/
+/*            height: 1000px;
+            width: 1221px;*/
+            height: 100%;
+            width: 100%;
+            background-position: bottom right;
+            background-repeat: no-repeat;
+            position: absolute;
+            right: 4%;
+            bottom: 4%;
+            opacity: 0.2;
         }
         .wrapper {
             padding: 0.5rem;
@@ -168,6 +185,8 @@
 
 </head>
 <body>
+
+    <div class="bat"></div>
 
     <div class="wrapper">
         <header class="title">Tucker Bickler</header>
