@@ -1,6 +1,0 @@
-[submodule "tumblr"]
-	path = tumblr
-	url = https://github.com/tuckbick/tumblr.git
-[submodule "soundon"]
-	path = soundon
-	url = https://github.com/tuckbick/SoundOn.git
